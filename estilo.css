@@ -1,0 +1,124 @@
+
+h1 {
+    font-style: italic; 
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: radial-gradient(rgb(185, 185, 185) 1px, transparent 0);
+    background-size: 15px 18px;
+    background-color: azure;
+}
+
+header {
+    
+   background-color: #cbc6ff;
+   color: #9ddcfa;
+   padding: 10px 0;
+}
+
+nav {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px 0;
+   box-shadow: 0px 5px 0px #226280;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline; /*para o menu ficar na horizontal*/
+}
+
+nav ul li a {
+    color: #3c366e;
+    text-decoration: none; /*para que não apareça underline abaixo de link*/
+    padding: 15px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a:hover { /*para quando o mouse passar sobre o link*/
+    background-color: #766897;
+    color: #9ddcfa;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s; /*efeito suave de transição no menu*/
+}
+
+main {
+    padding: 50px;
+    background-color:azure;
+    text-align: center;
+}
+
+main ul {
+    display: inline-block;
+}
+
+form { /*estilização da página Contato*/
+    max-width:420px; 
+    margin:1px auto;
+    font-size: 18px;
+}
+
+.q { /*estilização da classe "q" para os espaços do form*/
+  color:rgb(24, 70, 156);
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  line-height: 20px;
+  border:2px solid rgb(129, 144, 212);
+  transition: all 0.3s;
+  padding: 10px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.q:focus { 
+    border:2px solid;
+}
+
+textarea { /*estilização da parte da mensagem*/
+  height: 110px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.button { /*estilização do botão enviar*/
+  width: 100%;
+  background:#665fc9;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:rgb(220, 251, 252);
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-weight:bold;
+  
+}
+
+.button:hover { 
+    background:#497dcc; 
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li a {
+        display: block
+    }
+}
